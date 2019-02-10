@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Our own CSS -->
+    <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<!-- When the entire Dom is loaded, the "getMovieData" function will be invoked -->
+
+<body>
+
+    <!--a dependcy library required by bootstrap js -->
+    <script src="js/popper.js"></script>
+    <!--using bootstrap js for effects like modals -->
+    <script src="js/bootstrap-native-v4.js"></script>
+    <!--a simple library so that html tags can be separated into other files - neater and cleaner -->
+    <script src="js/w3.js"></script>
+    <!--where pur javascript resides -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Delonix Regia <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ROOMS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">AMENITIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="location.html">LOCATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">REVIEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="chatbot.html">NEED HELP?</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+   <form action="" class="container booking" name="booking">
+          
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" type="date" required>
+          <span class="form-label">Check In</span>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="form-group">
+          <input class="form-control" type="date" required>
+          <span class="form-label">Check Out</span>
+        </div>
+      </div>
+    </div>
+
+    <ul class="persons">
+      <li>
+        <label>Adults</label>
+        <div class="input-text">
+          <select name="adults">
+            <option value="1">1</option>
+            <option value="2" selected="selected">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>   
+          </select>
+          <div class="icon"></div>
+        </div>
+      </li>
+
+      <li>
+        <label>Children</label>
+        <div class="input-text">
+          <select name="children">
+            <option value="0">0</option>
+            <option value="1" selected="selected">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>   
+          </select>
+          <div class="icon"></div>
+        </div>
+      </li>
+    </ul>
+
+    <button class="button-big" id="search"><div class="icon"></div>Search rooms</button>
+
+  </form>
+
+  <section class="section bg-light">
+
+    <div class="container">
+       
+      <div class="site-block-half d-flex bg-white" data-aos="fade-up" data-aos-delay="100">
+        <div class="text">
+          <h2>Deluxe Room</h2>
+          <img src=".\images\deluxe-room.jpeg" height="350" ><br/><br/>
+          <span class="d-block"><span class="display-4 text-primary">$299</span> / per night </span>
+          <p class="lead">Deluxe room allows you to have a city view through the window, allowing you to enjoy the night view. with elegent decorations in the room, the relaxation will kick in right after you enter the room.</p>
+          <h3>Inside Your Room</h3>
+          <ul>
+            <li>30 square metres</li>
+            <li>1 king or 2 single bed</li>
+            <li>Bathroom amenities</li>
+            <li>Hairdryer</li>
+            <li>Non-smoking</li>
+          </ul>
+          <p><a href="#" class="btn btn-primary text-white">Book Now</a></p>
+        </div>
+      </div>
+
+      <div class="site-block-half d-flex bg-white" data-aos="fade-up" data-aos-delay="200">
+        <div class="text order-1">
+          <h2>Premier Suite</h2>
+          <img src=".\images\premier-suite.jpg" height="350"><br/><br/>
+          <span class="d-block"><span class="display-4 text-primary">$399</span> / per night </span>
+          <p class="lead">Have the luxary to take a deep-soaking bathtub, get yourself to relax in the warm water, let it surround you and cure youself away from all the stress that you have.</p>
+          <h3>Inside Your Room</h3>
+          <ul>
+            <li>42 square metres</li>
+            <li>1 king or 2 single beds</li>
+            <li>deep-soaking bathtub</li>
+            <li>bathroom amenities</li>
+            <li>Hairdryer</li>
+            <li>Non-smoking and smoking guest room available</li>
+          </ul>
+          <p><a href="#" class="btn btn-primary text-white">Book Now</a></p>
+        </div>
+      </div>
+
+      <div class="site-block-half d-flex bg-white" data-aos="fade-up" data-aos-delay="200">
+        <div class="text order-1">
+          <h2>Presidential Suite</h2>
+          <img src=".\images\presidential-suite.jpg" height="350"><br/><br/>
+          <span class="d-block"><span class="display-4 text-primary">$699</span> / per night </span>
+          <p class="lead">Right at the uppermost floor, the presidential suite will provide you a splendid experience during your stay in the hotel.
+            With the dedicated bulter team to provide customised dining and entertainment. 
+          </p>
+          <h3>Inside Your Room</h3>
+          <ul>
+            <li>509 square metres</li>
+            <li>Master bedroom with bathrooms</li>
+            <li>3 bedrooms</li>
+            <li>3 furnished balconies</li>
+            <li>3 bathrooms</li>
+            <li>2 living rooms</li>
+            <li>Bathroom amenities</li>
+            <li>Dining table</li>
+            <li>Kitchen</li>
+            <li>Media room with karaoke</li>
+            <li>Gym room with fitness equipment</li>
+            <li>Massage room</li>
+            <li>Steam and sauna facilities</li>
+            <li>Non-smoking or smoking guest room available</li>
+          </ul>
+          <p><a href="#" class="btn btn-primary text-white">Book Now</a></p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
